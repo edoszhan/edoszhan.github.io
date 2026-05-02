@@ -1,0 +1,92 @@
+.pub-header {
+  margin-bottom: 2rem;
+
+  p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin-bottom: 0;
+  }
+}
+
+.pub-list {
+  list-style: none;
+  counter-reset: pub-counter;
+  padding: 0;
+  margin: 0;
+}
+
+.pub-entry {
+  counter-increment: pub-counter;
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0 0.75rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+
+  &:first-child {
+    border-top: 1px solid var(--border-color);
+  }
+
+  &::before {
+    content: counter(pub-counter) ".";
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-top: 0.15rem;
+  }
+}
+
+.pub-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.pub-authors {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+
+  strong {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+}
+
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.pub-venue {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pub-link {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.15s, border-color 0.15s;
+
+  &:hover {
+    color: var(--text-primary);
+    border-color: var(--text-secondary);
+    text-decoration: none;
+  }
+}

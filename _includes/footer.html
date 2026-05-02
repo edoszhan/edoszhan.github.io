@@ -1,0 +1,25 @@
+<footer class="site-footer">
+  <div class="wrapper footer-inner">
+    <span class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.author }}</span>
+    <span class="footer-links">
+      {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+      {% endif %}
+      {% if site.email %}
+        <a href="mailto:{{ site.email }}">Email</a>
+      {% endif %}
+    </span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var btn = document.querySelector('.nav-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      document.getElementById('nav-menu').classList.toggle('open');
+    });
+  })();
+</script>

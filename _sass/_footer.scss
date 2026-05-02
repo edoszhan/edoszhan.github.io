@@ -1,0 +1,35 @@
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+
+  a {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+  }
+}

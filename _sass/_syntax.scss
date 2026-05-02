@@ -1,0 +1,33 @@
+.highlight {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: $radius;
+
+  pre {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 1.25rem;
+  }
+
+  // comments
+  .c, .c1, .c2, .cm, .cs, .cp { color: #8b949e; font-style: italic; }
+  // keywords
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { color: #ff7b72; }
+  // strings
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx { color: #a5d6ff; }
+  // numbers
+  .m, .mi, .mf, .mh, .mo { color: #79c0ff; }
+  // names / identifiers
+  .n, .na, .nb, .nc, .nd, .nf, .ni, .nl, .nn, .no, .nt, .nv { color: #d2a8ff; }
+  // operators
+  .o, .ow { color: #ff7b72; }
+  // punctuation
+  .p { color: var(--text-primary); }
+  // builtins
+  .bp { color: #79c0ff; }
+  // variables
+  .vi, .vc, .vg { color: #ffa657; }
+  // error
+  .err { color: #f85149; background: transparent; }
+}

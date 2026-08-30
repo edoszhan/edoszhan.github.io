@@ -16,6 +16,7 @@ description: "Research publications by Yersultan Doszhan."
       <div class="pub-authors">Yoojin Hong, <strong>Yersultan Doszhan</strong>, Joseph Seering</div>
       <div class="pub-title">Fostering Collective Discourse: A Distributed Role-Based Approach to Online News Commenting</div>
       <div class="pub-venue"><em>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26)</em></div>
+      <div class="pub-award">🏅 CHI 2026 Honorable Mention Award</div>
       <div class="pub-links">
         <a class="pub-link" href="https://dl.acm.org/doi/10.1145/3772318.3791518" target="_blank" rel="noopener">ACM</a>
         <a class="pub-link" href="https://arxiv.org/abs/2510.02766" target="_blank" rel="noopener">arXiv</a>
